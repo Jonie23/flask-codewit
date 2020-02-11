@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+
+{% include "includes/nav.html" %}
+
+
+{% block body %}
+<div class="container">
+        <h1>ABOUT US</h1>
+      <div class="row">
+
+        <div class="col-sm-6 banner-image">
+             <img src="{{ url_for('static', filename='images/about.jpg') }}"  class="img-responsive" id="pic" width="500" height="500">
+              
+        </div>
+
+        <div class="col-sm-6 banner-info">
+        
+       <h2>We Tutor</h2>
+       <p class="big-text">Learn How to Create Responsive Websites</p>
+       <p>We are a team focused on teaching interested individuals;</p>
+          <p> How to make beautiful responsive websites using HTML, CSS and Bootstrap and Flask</p>
+      <a class="btn btn-first" href="{{ url_for('register') }}">Register</a>
+      <a class="btn btn-second" href="#">Subscribe</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

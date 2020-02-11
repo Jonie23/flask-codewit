@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% include "includes/nav.html" %}
+
+
+{% block body %}
+
+<div class="container">
+        <h1>This Website was created using Flask</h1>
+      <div class="row">
+
+        <div class="col-sm-6 banner-info">
+        
+       <h2>How To</h2>
+       <p class="big-text">Create Responsive Website</p>
+       <p>Learn how to make beautiful responsive website using HTML, CSS and Bootstrap</p>
+      <a class="btn btn-first" href="{{ url_for('register') }}">Register</a>
+      <a class="btn btn-second" href="#">Subscribe</a>
+    </div>
+
+    <div class="col-sm-6 banner-image">
+            <img src="{{ url_for('static', filename='images/business.png')}}" class="img-responsive" id="pic" width="500" height="500">
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %}
